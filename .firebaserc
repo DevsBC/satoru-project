@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "PROJECTID"
+  },
+  "targets": {
+    "satoru-305501": {
+      "hosting": {
+        "TARGETNAME": [
+          "HOSTNAME"
+        ]
+      }
+    }
+  }
+}

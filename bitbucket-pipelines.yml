@@ -1,0 +1,13 @@
+image: node:14
+pipelines:
+  branches:
+    master:
+    - step:
+        deployment: production
+        caches:
+        - node
+        script:
+        - npm install 
+        - npm run build
+        - npm install -g firebase-tools 
+        - TOKEN=$FIREBASE_TOKEN npm run pipeline
