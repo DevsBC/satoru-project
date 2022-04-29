@@ -7,7 +7,7 @@
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "init": "node config.js",
+    "init": "node ./init/config.js",
     "deploy": "firebase deploy --only hosting:TARGET",
     "pipeline": "firebase deploy --only hosting:TARGET --token=$TOKEN --project PROJECTID --non-interactive"
   },
