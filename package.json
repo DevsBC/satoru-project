@@ -1,6 +1,7 @@
 {
   "name": "satoru-project",
   "version": "0.0.0",
+  "author": "Juan Carlos Aranda Alonso",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host=0.0.0.0 --disable-host-check",
@@ -43,5 +44,6 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.6.2"
-  }
+  },
+  "description": "Empty project pre configured for new angular projects"
 }

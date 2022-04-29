@@ -104,7 +104,7 @@ function setFirebase() {
     write('.firebaserc', firebaserc);
     const firebase = `{
         "hosting": [{
-            "public": "dist/satoru-project",
+            "public": "dist/${settings.projectName}",
             "headers": [{
                 "source": "/**",
                 "headers": [{
