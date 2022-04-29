@@ -3,10 +3,10 @@ const readline = require('readline');
 const settings = require('./appsettings.json');
 
 setEnvironments();
-//setIndex();
-//setFirebase();
-//editPackageJson();
-
+setIndex();
+setFirebase();
+edit('package.json');
+edit('angular.json');
 
 function write(path, contents) {
     fs.writeFile(path, contents, (error, data) => (error) ? console.log(error) : console.log('Seteado'));
@@ -127,8 +127,7 @@ function setFirebase() {
     write('firebase.json', firebase);
 }
 
-function editPackageJson() {
-    const file = 'package.json';
+function edit(file) {
     fs.readFile(file, {encoding: 'utf8'}, function (err,data) {
         let formatted = data.replace(/satoru-project/g, settings.projectName)
             .replace(/TARGET/g, settings.target)
