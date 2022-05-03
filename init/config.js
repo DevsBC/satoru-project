@@ -43,7 +43,7 @@ function setEnvironments() {
     content = `
     export const environment = {
         production: true,
-        appName: "${settings.appName}",
+        appName: '${settings.appName}',
     ${getEnv(prodEnvironment)}
     }
     `;
@@ -52,7 +52,7 @@ function setEnvironments() {
     content = `
     export const environment = {
         production: false,
-        appName: "${settings.appName}",
+        appName: '${settings.appName}',
     ${getEnv(localEnvironment)}
     }
     `;
